@@ -2,7 +2,7 @@ import Image from "next/image"
 import { FaSearch } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
 
-export const Header = () => {
+const Header = () => {
     return(
         <header className="max-w-[1920px] w-full h-[532px] m-auto bg-[#F8F8FF] relative flex items-center justify-center">
             <div className="absolute w-full h-full">
@@ -59,3 +59,5 @@ export const Header = () => {
         </header>
     )
 }
+
+export default Header;

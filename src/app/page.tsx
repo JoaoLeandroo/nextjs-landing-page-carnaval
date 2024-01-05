@@ -1,5 +1,6 @@
-import { Header } from "./components/Header/page"
-import { Card } from "./components/Card/page"
+import Header from "./components/Header/page"
+import Card from "./components/Card/page"
+import Image from "next/image"
 
 export default function Home() {
   return (
@@ -15,77 +16,172 @@ export default function Home() {
           </div>
         </div>
         <div className="w-full grid grid-cols-3 gap-8">
-          <Card
-            href="foto1.png"
-            alt="Bloco de carnaval Python do Vovo"
-            title="O Python do vovô não sobe mais"
-            text="Lorem ipsum dolor sit amet consectetur elit. Cumque eveniet velit iusto dolorem!"
-            localization="Recife-BR"
-          />
-          
-          <Card
-            href="foto2.png"
-            alt="Bloco de carnaval Todo Mundo Null"
-            title="Todo Mundo Null"
-            text="Lorem ipsum dolor sit amet consectetur elit. Cumque eveniet velit iusto dolorem!"
-            localization="São Paulo-BR"
-          />
-          
-          <Card
-            href="foto3.png"
-            alt="Bloco de carnaval Hoje dou Exception"
-            title="Hoje dou exception"
-            text="Lorem ipsum dolor sit amet consectetur elit. Cumque eveniet velit iusto dolorem!"
-            localization="Recife-BR"
-          />
-          
-          <Card
-            href="foto4.png"
-            alt="Bloco de Carnaval Manda Node"
-            title="Manda Node"
-            text="Lorem ipsum dolor sit amet consectetur elit. Cumque eveniet velit iusto dolorem!"
-            localization="Rio de Janeiro-BR"
-          />
-          
-          <Card
-            href="foto5.png"
-            alt="Bloco de carnaval so no back end"
-            title="Só no Back End"
-            text="Lorem ipsum dolor sit amet consectetur elit. Cumque eveniet velit iusto dolorem!"
-            localization="São Paulo-BR"
-          />
-          
-          <Card
-            href="foto6.png"
-            alt="Bloco de carnaval Esse anel não é de Ruby"
-            title="Esse anel não é de Ruby"
-            text="Lorem ipsum dolor sit amet consectetur elit. Cumque eveniet velit iusto dolorem!"
-            localization="Salvador-BR"
-          />
-          
-          <Card
-            href="foto7.png"
-            alt="Bloco de carnaval Pimenta no C# dos outros é refresco"
-            title="Pimenta no C# dos outros é refresco"
-            text="Lorem ipsum dolor sit amet consectetur elit. Cumque eveniet velit iusto dolorem!"
-            localization="Recife-BR"
-          />
+          <Card>
+            <div>
+                <Image
+                  src="/images/foto1.png"
+                  alt="Bloco de carnaval Python do Vovo"
+                  width={400}
+                  height={100}
 
-          <Card
-            href="foto8.png"
-            alt="Bloco de carnaval EnCache Aqui"
-            title="EnCache Aqui"
-            text="Lorem ipsum dolor sit amet consectetur elit. Cumque eveniet velit iusto dolorem!"
-            localization="Salvador-BR"
-          />
+                />
+            </div>
 
-          <Card
-            href="foto9.png"
-            alt="Bloco de carnaval Não valho nada mas JAVA li"
-            title="Não valho nada mas JAVA li"
-            text="Lorem ipsum dolor sit amet consectetur elit. Cumque eveniet velit iusto dolorem!"
-            localization="Recife-BR"
-          />
+            <div className="pl-4 flex flex-col gap-4">
+                <h3 className="font-bold text-xl mt-4">O Python do vovô não sobe mais</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur elit. Cumque eveniet velit iusto dolorem!
+                </p>
+
+                <span>
+                  Recife-BR
+                </span>
+            </div>
+          </Card>
+
+          <Card>
+            <div>
+                <Image
+                  src="/images/foto2.png"
+                  alt="Bloco de carnaval Todo Mundo Null"
+                  width={400}
+                  height={100}
+                />
+            </div>
+            <div className="pl-4 flex flex-col gap-4">
+                <h3 className="font-bold text-xl mt-4">Todo Mundo Null</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur elit. Cumque eveniet velit iusto dolorem!
+                </p>
+                <span>São Paulo-BR</span>
+            </div>
+          </Card>
+          
+          <Card>
+            <div>
+                <Image
+                  src="/images/foto3.png"
+                  alt="Bloco de carnaval Hoje dou Exception"
+                  width={400}
+                  height={100}
+                />
+            </div>
+            <div className="pl-4 flex flex-col gap-4">
+                <h3 className="font-bold text-xl mt-4">Hoje dou exception</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur elit. Cumque eveniet velit iusto dolorem!
+                </p>
+                <span>Recife-BR</span>
+            </div>
+          </Card>
+
+          <Card>
+            <div>
+                <Image
+                  src="/images/foto4.png"
+                  alt="Bloco de Carnaval Manda Node"
+                  width={400}
+                  height={100}
+                />
+            </div>
+            <div className="pl-4 flex flex-col gap-4">
+                <h3 className="font-bold text-xl mt-4">Manda Node</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur elit. Cumque eveniet velit iusto dolorem!
+                </p>
+                <span>Rio de Janeiro-BR</span>
+            </div>
+          </Card>
+
+          <Card>
+            <div>
+                <Image
+                  src="/images/foto5.png"
+                  alt="Bloco de carnaval so no back end"
+                  width={400}
+                  height={100}
+                />
+            </div>
+            <div className="pl-4 flex flex-col gap-4">
+                <h3 className="font-bold text-xl mt-4">Só no Back End</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur elit. Cumque eveniet velit iusto dolorem!
+                </p>
+                <span>Rio de Janeiro-BR</span>
+            </div>
+          </Card>
+
+          <Card>
+            <div>
+                <Image
+                  src="/images/foto6.png"
+                  alt="Bloco de carnaval Esse anel não é de Ruby"
+                  width={400}
+                  height={100}
+                />
+            </div>
+            <div className="pl-4 flex flex-col gap-4">
+                <h3 className="font-bold text-xl mt-4">Esse anel não é de Ruby</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur elit. Cumque eveniet velit iusto dolorem!
+                </p>
+                <span>Salvador-BR</span>
+            </div>
+          </Card>
+    
+          <Card>
+            <div>
+                <Image
+                  src="/images/foto7.png"
+                  alt="Bloco de carnaval Pimenta no C# dos outros é refresco"
+                  width={400}
+                  height={100}
+                />
+            </div>
+            <div className="pl-4 flex flex-col gap-4">
+                <h3 className="font-bold text-xl mt-4">Pimenta no C# dos outros é refresco</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur elit. Cumque eveniet velit iusto dolorem!
+                </p>
+                <span>Recife-BR</span>
+            </div>
+          </Card>
+
+          <Card>
+            <div>
+                <Image
+                  src="/images/foto8.png"
+                  alt="Bloco de carnaval EnCache Aqui"
+                  width={400}
+                  height={100}
+                />
+            </div>
+            <div className="pl-4 flex flex-col gap-4">
+                <h3 className="font-bold text-xl mt-4">EnCache Aqui</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur elit. Cumque eveniet velit iusto dolorem!
+                </p>
+                <span>Salvador-BR</span>
+            </div>
+          </Card>
+          
+          <Card>
+            <div>
+                <Image
+                  src="/images/foto9.png"
+                  alt="Bloco de carnaval Não valho nada mas JAVA li"
+                  width={400}
+                  height={100}
+                />
+            </div>
+            <div className="pl-4 flex flex-col gap-4">
+                <h3 className="font-bold text-xl mt-4">Não valho nada mas JAVA li</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur elit. Cumque eveniet velit iusto dolorem!
+                </p>
+                <span>Recife-BR</span>
+            </div>
+          </Card>
         </div>
 
         
