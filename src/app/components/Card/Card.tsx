@@ -3,7 +3,7 @@ interface CardsProps {
 }
 const Card: React.FC<CardsProps> = ({children}) => {
     return(
-        <section className="w-[384px] h-[323px] rounded-xl bg-[#FFFFFF] border border-solid border-gray-500">
+        <section className="w-[384px] h-[323px] rounded-lg bg-purple-700">
             {children}
         </section>
     )

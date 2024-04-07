@@ -22,7 +22,7 @@ const Header = () => {
                 />
             </div>
 
-            <div className="relative w-[993px] h-[332px]">
+            <div className="relative w-[993px] h-[332px] px-1">
                 <div className="text-center">
                     <p className="text-[#E45858] mb-[18px] font-medium">Find Your Block</p>
                     <h1 className="text-[#121214] font-bold text-4xl mb-10">
@@ -32,7 +32,7 @@ const Header = () => {
                     </h1>
                 </div>
 
-                <div className="w-full h-32 bg-[#FFFFFE] rounded-[10px] border border-solid border-gray-500 flex items-center justify-center gap-6">
+                <div className="w-full p-3 bg-[#FFFFFE] rounded-[10px] border border-solid border-gray-500 flex items-center  flex-col lg:flex-row justify-center gap-6">
                     <div className="relative">
                         <div className="absolute top-3 left-3">
                             <FaSearch size={20} color={'red'}/>

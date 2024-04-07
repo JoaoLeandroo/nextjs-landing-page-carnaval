@@ -4,13 +4,13 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <>
+    <div>
       <Header />
-      <main className="max-w-[1216px] w-full m-auto mb-28 mt-[100px]">
-        <div className="w-full h-12 flex justify-between items-center mb-[41.5px]">
+      <main className="max-w-[1216px] w-full mx-auto mt-[100px] text-white">
+        <div className="w-full h-12 flex justify-between items-center mb-[41.5px] px-2">
           <h2 className="font-bold text-3xl">Blocos Recomendados</h2>
 
-          <div className="p-2 border border-solid border-gray-500 rounded-lg">
+          <div className="p-3 border border-solid border-gray-500 rounded-lg text-center">
             <button className="uppercase w-[86px] text-sm font-semibold text-white bg-[#6246EA] p-2 rounded-md">
               Lista
             </button>
@@ -19,7 +19,7 @@ export default function Home() {
             </button>
           </div>
         </div>
-        <div className="w-full grid grid-cols-3 gap-8">
+        <div className="w-full grid xl:grid-cols-3 lg:grid-cols-2 grid-cols-1 items-center place-items-center gap-8">
           <Card>
             <div>
               <Image
@@ -202,6 +202,6 @@ export default function Home() {
           </Card>
         </div>
       </main>
-    </>
+    </div>
   );
 }
